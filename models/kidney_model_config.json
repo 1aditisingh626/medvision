@@ -1,0 +1,22 @@
+{
+  "class_names": [
+    "Cyst",
+    "Normal",
+    "Stone",
+    "Tumor"
+  ],
+  "input_size": [
+    380,
+    380
+  ],
+  "color_mode": "rgb",
+  "preprocessing": {
+    "type": "none"
+  },
+  "architecture": "TensorFlow Keras EfficientNetB4 with include_top=False, ImageNet weights, GlobalAveragePooling2D, Dropout(0.30), Dense(4, activation='softmax')",
+  "training_tensorflow_version": "2.21.0",
+  "input_notes": "Notebook resizes RGB images to 380x380, casts to float32, and passes pixel values in the 0-255 range. No external scaling or normalization is applied; EfficientNetB4 includes its own input rescaling/preprocessing layers.",
+  "class_order_source": "The notebook defines CLASSES = ['Cyst', 'Normal', 'Stone', 'Tumor'] and assigns labels using enumerate(CLASSES), so output indices are 0=Cyst, 1=Normal, 2=Stone, 3=Tumor.",
+  "model_filename": "best_model.keras",
+  "verification_note": "Metadata derived from the uploaded kidney_c.ipynb. Real model inference still requires the trained .keras file."
+}

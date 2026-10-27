@@ -1,0 +1,17 @@
+{
+  "class_names": [
+    "Cyst",
+    "Normal",
+    "Stone",
+    "Tumor"
+  ],
+  "input_size": [
+    380,
+    380
+  ],
+  "color_mode": "rgb",
+  "preprocessing": {
+    "type": "none"
+  },
+  "note": "Verified from kidney_c.ipynb: classes are explicitly ordered Cyst, Normal, Stone, Tumor; input is RGB 380x380 float32 pixels in 0-255 range. EfficientNetB4 has internal preprocessing, so do not externally scale/normalize."
+}
